@@ -31,6 +31,8 @@
   </a>
 </p>
 
+<p align="center"> <img src="https://github.com/rocketseat-education/nlw-03-omnistack/blob/master/.github/happy.png?raw=true" alt="Happy" /> </p>
+
 <h1 align="center">Next Level Week, project "Happy".📱💻</h1>
 
 
