@@ -42,7 +42,7 @@ export default function Orphanage() {
   }, [params.id]); 
 
   if(!orphanage){
-    return <p>Carregando orfanato...</p>
+    return <p>Carregando informações do Lar...</p>
   }
 
   return (
