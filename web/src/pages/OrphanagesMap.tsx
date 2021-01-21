@@ -1,6 +1,4 @@
 import React, {useEffect, useState} from "react";
-
-
 import { Link } from "react-router-dom"; //packgage
 import { FiPlus, FiArrowRight } from "react-icons/fi"; //packgage
 
@@ -13,19 +11,11 @@ import "../styles/pages/orphanages-map.css";
 import mapIcon from "../utils/mapIcon";
 import api from "../services/api";
 
-
-interface Orphanages{
-  id:number,
-  latitude:number,
-  longitude:number,
-  name:string,
-}
+// type file
 
 const OrphanagesMap = () => {
 
   const [orphanages, setOrphanages] = useState<Orphanages[]>([])
-
-  console.log(orphanages); // ciclo de renderização 
 
   useEffect(() => {
     api.get('orphanages').then(response => {

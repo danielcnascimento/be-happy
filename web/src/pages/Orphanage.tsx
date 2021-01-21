@@ -10,20 +10,6 @@ import mapIcon from '../utils/mapIcon'
 import '../styles/pages/orphanage.css';
 import Sidebar from "../components/Sidebar";
 
-interface Orphanages{
-  latitude:number,
-  longitude:number,
-  name:string,
-  about:string,
-  instruction:string,
-  opening_hours:string,
-  open_on_weeks:string,
-  images:Array<{
-    url:string
-    id:string,
-  }>;
-}
-
 interface orphanageParams{
   id: string,
 }

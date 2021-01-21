@@ -23,7 +23,7 @@ export default function CreateOrphanage() {
   const [images, setImages] = useState<File[]>([]);
   const [previewImages, setPReviewImages] = useState<string[]>([]);
 
-  function handleMapClick(event: LeafletMouseEvent) {
+  function handleMapClick(event: LeafletMouseEvent):void {
     const { lat, lng } = event.latlng;
 
     setPosition({

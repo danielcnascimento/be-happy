@@ -6,6 +6,7 @@ import orphanagesView from "../views/orphanages_view";
 import Orphanage from "../models/Orphanage";
 
 export default {
+  // will list all orphanages
   async index(request: Request, response: Response) {
     const orphanagesRepository = getRepository(Orphanage);
 
@@ -16,6 +17,7 @@ export default {
     return response.json(orphanagesView.renderMany(orphanages));
   },
 
+  //show a orphanage
   async show(request: Request, response: Response) {
     const { id } = request.params;
 
@@ -28,6 +30,7 @@ export default {
     return response.json(orphanagesView.render(orphanage));
   },
 
+  // create an orphanage
   async create(request: Request, response: Response) {
     const {
       name,
